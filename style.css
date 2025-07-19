@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --highlight-purple: #cb93fd;
+    --grey-discord: #2f3136;
+
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Nunito';
+}
+.line-break{
+   border: 1px dotted;
+}
+
+.intro h2{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+}
+
+.letter{
+    background-color: var(--grey-discord);
+    max-width: 600px;
+    min-height: 300px;
+    margin: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.letter .title{
+    font-family: 'Josefin Sans';
+}
+
+.letter_container{
+    margin: 2rem;
+}
+
+.from_to{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.letter img{
+    height: 200px;
+}
+
+.footer p{
+    margin-inline: 5px;
+    margin-block: 10px;
+}
+
+.footer button{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-inline: 5px;
+}
+
+.intro_text{
+    text-align: center;
+}
+
+.intro_content{
+  max-width: 450px;
+  margin: auto;
+}
+
+.pao_msg {
+  display: flex;
+  margin: 5px 0;
+  padding-left: 50px;
+  position: relative;
+}
+
+.avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+}
+
+.text_style{
+  margin: 0;
+  padding: 6px 10px;
+  background-color: var(--grey-discord);
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.username{
+    padding: 2px;
+
+}
+
+/* Hide avatar and username unless show-info class is present */
+.message:not(.show-info) .avatar,
+.message:not(.show-info) .username {
+  display: none;
+}
+
+.highlight {
+  color: var(--highlight-purple); /* red-orange */
+  font-weight: bold;
+}
+
+.password_container{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.password_container input{
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 6px 40px;
+}
+
+.password_container button{
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 0;
+}
+
+.password_container button:hover{
+    box-shadow: 1px 1px 0;
+    transform: translateY(1px);
+}
+
+.hint{
+    margin: 1rem 0;
+}
+
+.pw_status{
+    display: none;
+}
+
+/*Hide stuff ig*/
+.hidden{
+    display: none;
+}
+
+/*Pop up animtaion*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
