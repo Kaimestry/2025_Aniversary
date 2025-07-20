@@ -3,92 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KMT</title>
-
+    <title>Paoversary 2025</title>
+    <link rel="icon" type="image/png" href="img/pao_split.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="intro">
-        <h2>Welcome to Kaimestry 's Anniversary Special</h2>
-        <p class="intro_text">8th Octorber 2025</p>
-        <hr class="line-break">
-    </div>
+    <div class="big_container">
+        <div class="intro">
+            <h2>Welcome to Kaimestry 's Anniversary Special</h2>
+            <p class="intro_text">8th Octorber 2025</p>
+            <hr class="line-break">
+        </div>
 
-    <div class="letter" id="letter">
-        <div class="letter_container">
-            <div class="title"><h2>INVITATION</h2></div>
-            <div class="letter_content">
-                <div class="from_to">
-                    <p>From: Khánh An</p>
-                    <p>To: Eurika Bianca</p>
-                </div>
-                <img src="img/pao_flowers.png" alt="Letter_img">
-                <div class="footer">
-                    <p>Will you accept this anniversary gift from me :((((</p>
-                    <div class="">
-                        <button class="close" id="acp_letter">Yes (No is not an option)</button>
+        <div class="letter" id="letter">
+            <div class="letter_container">
+                <div class="title"><h2>INVITATION</h2></div>
+                <div class="letter_content">
+                    <img src="img/pao_flowers.png" alt="Letter_img">
+                    <div class="footer">
+                        <p>Will you accept this anniversary gift from me :((((</p>
+                        <div class="">
+                            <button class="close" id="acp_letter">Yes (No is not an option)</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="intro_content hidden" id="intro_content">
-    <!-- First Paok message -->
-        <div class="pao_msg paok show-info fade-in">
-            <div class="avatar"><img src="img/paok.png" alt="paok_logo"></div>
-            <div class="chat_content">
-                <div class="username">PAOK</div>
-                <p class="text_style">Welcome to this event!!</p>
+        <div class="pao_talk hidden fade-out-1" id="intro_content">
+        <!-- First Paok message -->
+            <div class="pao_msg paok show-info fadein1buthidden">
+                <div class="avatar"><img src="img/paok.png" alt="paok_logo"></div>
+                <div class="chat_content">
+                    <div class="username">Paok</div>
+                    <p class="text_style">Welcome to this event!!</p>
+                </div>
+            </div>
+            <!-- Paok message, no name/avatar -->
+            <div class="pao_msg paok fadein1buthidden">
+                <div class="chat_content">
+                    <p class="text_style">We are Paok and Paom. We'll here to
+                        take you through this <span class="highlight">amazing event</span></p>
+                </div>
+            </div>
+            <!--Paom-->
+            <div class="pao_msg paom show-info fadein1buthidden">
+                <div class="avatar"><img src="img/paom.png" alt="paom_logo"></div>
+                <div class="chat_content">
+                    <div class="username">Paom</div>
+                    <p class="text_style">Before going futher....</p>
+                </div>
+            </div>
+        <!-- Paom message, no name/avatar -->
+            <div class="pao_msg paom fadein1buthidden">
+                <div class="chat_content">
+                    <p class="text_style">This event is for <span class="highlight">'SPECIAL GUEST ONLY'.</span>
+                        So if you are the <span class="highlight">ONE</span> special guest, please
+                        enter the password to continue.
+                    </p>
+                </div>
             </div>
         </div>
-        <!-- Paok message, no name/avatar -->
-        <div class="pao_msg paok fade-in">
-            <div class="chat_content">
-                <p class="text_style">We are Paok and Paom. We'll here to
-                    take you through this <span class="highlight">amazing event</span></p>
+
+        <div class="fade-out-1 hidden" id="password_container"]>
+        <div class="password_container fadein1buthidden" >
+            <p>ENTER THE PASSWORD</p>
+            <form id="form" action="">
+                <input id="password_input" type="text" placeholder="">
+                <button type="submit">Enter</button>
+            </form>
+            <span class="pw_status hidden" id="pw_status">Password is incorrect, please try again</span>
+            <div class="hint">
+                <button id="hint_btn">Click for hint</button>
+                <div id="hint" class="hidden">
+                    <p>HINT: The day when we decided to date (6 numbers)</p>
+                </div>
             </div>
         </div>
-        <!--Paom-->
-        <div class="pao_msg paom show-info fade-in">
-            <div class="avatar"><img src="img/paom.png" alt="paom_logo"></div>
-            <div class="chat_content">
-                <div class="username">Paom</div>
-                <p class="text_style">Before going futher....</p>
-            </div>
         </div>
-    <!-- Paom message, no name/avatar -->
-        <div class="pao_msg paom fade-in">
-            <div class="chat_content">
-                <p class="text_style">This event is for <span class="highlight">'SPECIAL GUEST ONLY'.</span>
-                    So if you are the <span class="highlight">ONE</span> special guest, please
-                    enter the password to continue.
-                </p>
+
+        <div class="main" id="main">
+            <div class="pao_talk hidden" id="intro_clock">
+                <!-- Pao w/ img/ava -->
+                <div class="pao_msg paok show-info fade-in-2">
+                    <div class="avatar"><img src="img/paok.png" alt="paok_logo"></div>
+                    <div class="chat_content">
+                        <div class="username">Paok</div>
+                        <p class="text_style">Bitch</p>
+                    </div>
+                </div>
+                <!--no name/avatar -->
+                <div class="pao_msg paok fade-in-2">
+                    <div class="chat_content">
+                        <p class="text_style">Cock</p>
+                    </div>
+                </div>
+                <!--Paom-->
+                <div class="pao_msg paom show-info fade-in-2">
+                    <div class="avatar"><img src="img/paom.png" alt="paom_logo"></div>
+                    <div class="chat_content">
+                        <div class="username">Paom</div>
+                        <p class="text_style">Basflkahsdf</p>
+                    </div>
+                </div>
+                <!--Pao no name/avatar -->
+                <div class="pao_msg paom fade-in-2">
+                    <div class="chat_content">
+                        <p class="text_style">jadksfl</p>
+                        <p class="text_style">djshakjfdhasdfasdjfsadkfdaskjfjkasdhfjkashfkd</p>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="clock_container hidden" id="clock_container">
+                <div class="clock fade-in-2" id="clock">
+                    <p>We been in love for:</p>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <div class="password_container fade-in">
-        <p>ENTER THE PASSWORD</p>
-        <form id="form" action="">
-            <input id="password_input" type="text" placeholder="">
-            <button type="submit">Enter</button>
-        </form>
-        <span class="pw_status hidden" id="pw_status">Password is incorrect, please try again</span>
-        <div class="hint">
-            <button id="hint_btn">Click for hint</button>
-            <div id="hint" class="hidden">
-                <p>- all lowercase, no number, no special character, no space</p>
-                <p>- ''youloveme''</p>
-                <p>- ask ann for more hint ig</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="main hidden" id="main">
-        if the password works this would show up
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
