@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div class="pao_talk hidden fade-out-1" id="intro_content">
+        <div class="pao_onlinetext hidden fade-out-1" id="intro_content">
         <!-- First Paok message -->
             <div class="pao_msg paok show-info fadein1buthidden">
                 <div class="avatar"><img src="img/paok.png" alt="paok_logo"></div>
@@ -82,20 +82,20 @@
         </div>
         </div>
 
-        <div class="main" id="main">
-            <div class="pao_talk hidden" id="intro_clock">
+        <div class="intersection fade-out-2" id="inters_1">
+            <div class="pao_onlinetext hidden" id="intro_clock">
                 <!-- Pao w/ img/ava -->
                 <div class="pao_msg paok show-info fade-in-2">
                     <div class="avatar"><img src="img/paok.png" alt="paok_logo"></div>
                     <div class="chat_content">
                         <div class="username">Paok</div>
-                        <p class="text_style">Bitch</p>
+                        <p class="text_style">-3-)</p>
                     </div>
                 </div>
                 <!--no name/avatar -->
                 <div class="pao_msg paok fade-in-2">
                     <div class="chat_content">
-                        <p class="text_style">Cock</p>
+                        <p class="text_style">I guess the password isn't that hard...</p>
                     </div>
                 </div>
                 <!--Paom-->
@@ -103,27 +103,42 @@
                     <div class="avatar"><img src="img/paom.png" alt="paom_logo"></div>
                     <div class="chat_content">
                         <div class="username">Paom</div>
-                        <p class="text_style">Basflkahsdf</p>
+                        <p class="text_style">anyway</p>
                     </div>
                 </div>
                 <!--Pao no name/avatar -->
-                <div class="pao_msg paom fade-in-2">
+                <div class="pao_msg paom">
                     <div class="chat_content">
-                        <p class="text_style">jadksfl</p>
-                        <p class="text_style">djshakjfdhasdfasdjfsadkfdaskjfjkasdhfjkashfkd</p>
+                        <p class="text_style fade-in-2">Are you ready for the experience yet</p>
+                        <p class="text_style fade-in-2"><span class="highlight">Click the button</span> to continue </p>
                     </div>
                 </div>
-
             </div>
 
-            <div class="clock_container hidden" id="clock_container">
-                <div class="clock fade-in-2" id="clock">
-                    <p>We been in love for:</p>
+            <div class="continue hidden">
+                <button id="continue_ui_btn" class="continue_btn ui-btn fade-in-2"><span>CONTINUE</span></button>
+            </div>
+        </div>
+
+        <div class="clock_container hidden" id="clock_container">
+            <div class="clock fade-in-3">
+                <p id="counter">TIME</p>
+            </div>
+
+            <div class="pao_talk">
+                <div class="paok_talk fade-in-3">
+                    <p>Something somethinasjdfgsgdfjgjsdg</p>
+                    <img src="img/paok_clock.png" width="150px" alt="">
+                </div>
+                <div class="paom_talk fade-in-3">
+                    <img src="img/paom_clock.png" width="110px" alt="">
+                    <p>Something somethinasjdfgsgdfjgjsdg</p>
                 </div>
             </div>
-
         </div>
     </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
