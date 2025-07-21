@@ -1,429 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root{
-    --highlight-purple: #cb93fd;
-    --grey-discord: #2f3136;
-
+  --white: #E9E3DF;
+  --orange: #FF7A30;
+  --discord-blue: #30394b;
+  --discord-grey: #303030;
+  --black: #000000;
 }
 
 body{
-    background-color: whitesmoke;
-    font-family: 'Nunito';
-}
-.line-break{
-   border: 1px dotted;
+  background-color: var(--white);
 }
 
-.intro h2{
-    text-align: center;
-    margin-top: 1rem;
-    font-family: 'Josefin Sans';
-    font-size: 18px;
+/*LETTER CSS*/
+.letter_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .letter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--grey-discord);
-    margin: 2rem;
-    color: whitesmoke;
-    text-align: center;
-    border-radius: 20px;
-
+  background-color: var(--discord-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers the image horizontally */
+  text-align: center;   /* Optional: also centers text */
+  color: gainsboro;
+  width: 300px;
+  outline: 2px solid white;
+  outline-offset: -15px; /* Negative pulls it inward */
+  position: relative;
+  
 }
 
 .letter .title{
-    font-family: 'Josefin Sans';
-}
-
-.letter_container{
-    margin: 2rem;
-}
-
-.letter img{
-    height: 150px;
-}
-
-.footer p{
-    margin-inline: 5px;
-    margin-block: 10px;
-}
-
-.footer button{
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-inline: 5px;
-}
-
-.intro_text{
-    text-align: center;
-}
-
-/* PAO TEXTING */
-.pao_onlinetext{
-  max-width: 450px;
-  margin: auto;
-}
-
-.pao_msg {
-  display: flex;
-  padding-left: 50px;
-  position: relative;
-}
-
-.avatar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 40px;
-  height: 40px;
-}
-
-.avatar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 40%;
-}
-
-.text_style{
-  margin-block: 2px;
-  padding: 6px 10px;
-  background-color: var(--grey-discord);
-  color: white;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.username{
-    padding: 2px;
-}
-
-/* Hide avatar and username unless show-info class is present */
-.message:not(.show-info) .avatar,
-.message:not(.show-info) .username {
-  display: none;
-}
-
-.highlight {
-  color: var(--highlight-purple); /* red-orange */
   font-weight: bold;
 }
 
-.password_container{
-    text-align: center;
-    margin: 20px 0;
+.letter img{
+  width: 260px;
 }
 
-.password_container input{
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 6px 40px;
+.letter hr{
+  margin-inline: 50px;
 }
 
-.password_container button{
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 2px 2px 0;
+.invite-p{
+  margin: 30px 0 5px 0;
+  font-size: 12px;
 }
 
-.password_container button:hover{
-    box-shadow: 1px 1px 0;
-    transform: translateY(1px);
-}
-
-.hint{
-    margin: 1rem 0;
-}
-
-.pw_status{
-    display: none;
-}
-
-
-
-/*Hide stuff ig*/
-.hidden{
-    display: none;
-}
-
-/*Pop up animtaion*/
-.fade-in-1 {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.fade-in-1.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.fade-in-2 {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.fade-in-2.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.fade-in-3{
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.fade-in-3.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-/*fade out animation*/
-.fade-out-1 {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.fade-out-1.hide {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-.fade-out-2 {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.fade-out-2.hide {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
-/*UI BUTTON*/
-/* From Uiverse.io by Galahhad */ 
-.ui-btn {
-  --btn-default-bg: rgb(41, 41, 41);
-  --btn-padding: 15px 20px;
-  --btn-hover-bg: rgb(51, 51, 51);
-  --btn-transition: .3s;
-  --btn-letter-spacing: .1rem;
-  --btn-animation-duration: 1.2s;
-  --btn-shadow-color: rgba(0, 0, 0, 0.137);
-  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
-  --hover-btn-color: #FAC921;
-  --default-btn-color: #fff;
-  --font-size: 16px;
-  /* 👆 this field should not be empty */
-  --font-weight: 600;
-  --font-family: Menlo,Roboto Mono,monospace;
-  /* 👆 this field should not be empty */
-}
-
-/* button settings 👆 */
-.continue{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5%;
-}
-
-.ui-btn {
-  box-sizing: border-box;
-  padding: var(--btn-padding);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--default-btn-color);
-  font: var(--font-weight) var(--font-size) var(--font-family);
-  background: var(--btn-default-bg);
-  border: none;
-  cursor: pointer;
-  transition: var(--btn-transition);
-  overflow: hidden;
-  box-shadow: var(--btn-shadow);
-  border-radius: 10px;
-}
-
-.ui-btn span {
-  letter-spacing: var(--btn-letter-spacing);
-  transition: var(--btn-transition);
-  box-sizing: border-box;
-  position: relative;
-  background: inherit;
-}
-
-.ui-btn span::before {
-  box-sizing: border-box;
+.event-p{
   position: absolute;
-  content: "";
-  background: inherit;
+  font-size: 30px;
+  top: 160px;
+  left: 35px;
 }
 
-.ui-btn:hover, .ui-btn:focus {
-  background: var(--btn-hover-bg);
-}
-
-.ui-btn:hover span, .ui-btn:focus span {
-  color: var(--hover-btn-color);
-}
-
-.ui-btn:hover span::before, .ui-btn:focus span::before {
-  animation: chitchat linear both var(--btn-animation-duration);
-}
-
-@keyframes chitchat {
-  0% {
-    content: "#";
-  }
-
-  5% {
-    content: ".";
-  }
-
-  10% {
-    content: "^{";
-  }
-
-  15% {
-    content: "-!";
-  }
-
-  20% {
-    content: "#$_";
-  }
-
-  25% {
-    content: "№:0";
-  }
-
-  30% {
-    content: "#{+.";
-  }
-
-  35% {
-    content: "@}-?";
-  }
-
-  40% {
-    content: "?{4@%";
-  }
-
-  45% {
-    content: "=.,^!";
-  }
-
-  50% {
-    content: "?2@%";
-  }
-
-  55% {
-    content: "\;1}]";
-  }
-
-  60% {
-    content: "?{%:%";
-    right: 0;
-  }
-
-  65% {
-    content: "|{f[4";
-    right: 0;
-  }
-
-  70% {
-    content: "{4%0%";
-    right: 0;
-  }
-
-  75% {
-    content: "'1_0<";
-    right: 0;
-  }
-
-  80% {
-    content: "{0%";
-    right: 0;
-  }
-
-  85% {
-    content: "]>'";
-    right: 0;
-  }
-
-  90% {
-    content: "4";
-    right: 0;
-  }
-
-  95% {
-    content: "2";
-    right: 0;
-  }
-
-  100% {
-    content: "";
-    right: 0;
-  }
-}
-
-/* COUNTER CLOCK */
-.clock_container{
-  margin-top: 5rem;
-}
-
-.clock {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.clock p{
-  display: flex-end;
-  border: 5px solid var(--grey-discord);
-  border-radius: 9px;
-  padding: 10px 20px;
-  font-size: 40px;
-  font-family: 'Bitcount Single';
-  box-shadow: 5px 5px 0 var(--highlight-purple);
-}
-
-/*PAO CHAT ABOUT CLOCK*/
-.pao_talk{
-  margin: 1rem 2rem;
-}
-
-.paok_talk{
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
-.paom_talk{
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-.pao_talk p{
-  display: flex-end;
-  color: white;
-  text-align: end;
+.letter-time{
+  margin-top: 40px;
+  margin-bottom: 5px;
   font-size: 18px;
-  background-color: var(--grey-discord);
-  padding: 10px;
-  min-width: 200px;
 }
 
-.paok_talk p{
-  border-radius: 10px 10px 0 10px;
+.footer{
+  font-size: 10px;
+  margin: 10px 30px;
 }
-.paom_talk p{
-  border-radius: 0px 10px 10px 10px;
+
+.letter-btn{
+  margin: 20px 0 40px 0;
+} 
+
+.letter button{
+  font-size: 18px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
 }
+
+.letter button:hover{
+  color: #c145ff;
+}
+
+

@@ -9,135 +9,33 @@
 </head>
 <body>
     <div class="big_container">
-        <div class="intro">
-            <h2>Welcome to Kaimestry 's Anniversary Special</h2>
-            <p class="intro_text">8th Octorber 2025</p>
-            <hr class="line-break">
-        </div>
-
-        <div class="letter" id="letter">
-            <div class="letter_container">
-                <div class="title"><h2>INVITATION</h2></div>
-                <div class="letter_content">
-                    <img src="img/pao_flowers.png" alt="Letter_img">
+        <div class="letter_container">
+            <div class="letter">
+                <div class="title invite-p"><p>YOU'RE INVITED TO</p></div>
+                <img src="img/pao_flowers.png" alt="pao_with_flower">
+                <div class="content">
+                    <div class="title event-p">
+                        <p>PAO'S</p>
+                        <p>SPECIAL EVENT</p>
+                    </div>
+                    <div class="letter-time title">
+                        <hr>
+                        <p>08/20/2025</p>
+                        <hr>
+                    </div>
                     <div class="footer">
-                        <p>Will you accept this anniversary gift from me :((((</p>
-                        <div class="">
-                            <button class="close" id="acp_letter">Yes (No is not an option)</button>
-                        </div>
+                        <p>Join the Paos as we celebrate a milestone of love, laughter,
+                            and lasting memories on this special occasion.
+                        </p>
+                    </div>
+                    <div class="letter-btn">
+                        <button class="title" id="acp_letter_btn">ACCEPT THE INVITE</button>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="pao_onlinetext hidden fade-out-1" id="intro_content">
-        <!-- First Paok message -->
-            <div class="pao_msg paok show-info fadein1buthidden">
-                <div class="avatar"><img src="img/paok.png" alt="paok_logo"></div>
-                <div class="chat_content">
-                    <div class="username">Paok</div>
-                    <p class="text_style">Welcome to this event!!</p>
-                </div>
-            </div>
-            <!-- Paok message, no name/avatar -->
-            <div class="pao_msg paok fadein1buthidden">
-                <div class="chat_content">
-                    <p class="text_style">We are Paok and Paom. We'll here to
-                        take you through this <span class="highlight">amazing event</span></p>
-                </div>
-            </div>
-            <!--Paom-->
-            <div class="pao_msg paom show-info fadein1buthidden">
-                <div class="avatar"><img src="img/paom.png" alt="paom_logo"></div>
-                <div class="chat_content">
-                    <div class="username">Paom</div>
-                    <p class="text_style">Before going futher....</p>
-                </div>
-            </div>
-        <!-- Paom message, no name/avatar -->
-            <div class="pao_msg paom fadein1buthidden">
-                <div class="chat_content">
-                    <p class="text_style">This event is for <span class="highlight">'SPECIAL GUEST ONLY'.</span>
-                        So if you are the <span class="highlight">ONE</span> special guest, please
-                        enter the password to continue.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="fade-out-1 hidden" id="password_container"]>
-        <div class="password_container fadein1buthidden" >
-            <p>ENTER THE PASSWORD</p>
-            <form id="form" action="">
-                <input id="password_input" type="text" placeholder="">
-                <button type="submit">Enter</button>
-            </form>
-            <span class="pw_status hidden" id="pw_status">Password is incorrect, please try again</span>
-            <div class="hint">
-                <button id="hint_btn">Click for hint</button>
-                <div id="hint" class="hidden">
-                    <p>HINT: The day when we decided to date (6 numbers)</p>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="intersection fade-out-2" id="inters_1">
-            <div class="pao_onlinetext hidden" id="intro_clock">
-                <!-- Pao w/ img/ava -->
-                <div class="pao_msg paok show-info fade-in-2">
-                    <div class="avatar"><img src="img/paok.png" alt="paok_logo"></div>
-                    <div class="chat_content">
-                        <div class="username">Paok</div>
-                        <p class="text_style">-3-)</p>
-                    </div>
-                </div>
-                <!--no name/avatar -->
-                <div class="pao_msg paok fade-in-2">
-                    <div class="chat_content">
-                        <p class="text_style">I guess the password isn't that hard...</p>
-                    </div>
-                </div>
-                <!--Paom-->
-                <div class="pao_msg paom show-info fade-in-2">
-                    <div class="avatar"><img src="img/paom.png" alt="paom_logo"></div>
-                    <div class="chat_content">
-                        <div class="username">Paom</div>
-                        <p class="text_style">anyway</p>
-                    </div>
-                </div>
-                <!--Pao no name/avatar -->
-                <div class="pao_msg paom">
-                    <div class="chat_content">
-                        <p class="text_style fade-in-2">Are you ready for the experience yet</p>
-                        <p class="text_style fade-in-2"><span class="highlight">Click the button</span> to continue </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="continue hidden">
-                <button id="continue_ui_btn" class="continue_btn ui-btn fade-in-2"><span>CONTINUE</span></button>
-            </div>
-        </div>
-
-        <div class="clock_container hidden" id="clock_container">
-            <div class="clock fade-in-3">
-                <p id="counter">TIME</p>
-            </div>
-
-            <div class="pao_talk">
-                <div class="paok_talk fade-in-3">
-                    <p>Something somethinasjdfgsgdfjgjsdg</p>
-                    <img src="img/paok_clock.png" width="150px" alt="">
-                </div>
-                <div class="paom_talk fade-in-3">
-                    <img src="img/paom_clock.png" width="110px" alt="">
-                    <p>Something somethinasjdfgsgdfjgjsdg</p>
-                </div>
             </div>
         </div>
     </div>
-
 
     <script src="script.js"></script>
 </body>
