@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paoversary 2025</title>
+    <title>Paos-niversary 2025</title>
     <link rel="icon" type="image/png" href="img/pao_split.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="big_container">
     <!-- LETTERS -->
-    <div class="letter_container containers fade-in hidden" id="letter_container">
+    <div class="letter_container containers center fade-in hidden" id="letter_container">
         <div class="letter">
             <div class="title invite-p"><p>YOU'RE INVITED TO</p></div>
             <img src="img/pao_flowers.png" alt="pao_with_flower">
@@ -35,51 +35,67 @@
             </div>
         </div>
     </div>
+    <!-- PASSWORD -->
     <div class="password_container containers">
         <div class="password">
             <div class="pao_talking_container">
             <!-- PAO TALKING -->
             <!-- Paok:  -->
-                <div class="message-group hidden">
-                    <img class="pfp" src="img/paok.png" alt="User Avatar">
+                <div class="message-group msg_group_psw hidden">
+                    <img class="pfp" src="img/paok.png" alt="pao_avatar">
                     <div class="message-content">
                         <span class="username">Paok</span>
-                        <p class="message-bubble">Hey, this is my first message!</p>
+                        <p class="message-bubble">Sup</p>
                     </div>
                 </div> 
 
                 <!-- (Paok):   -->
-                <div class="message-group hidden continuation">
+                <div class="message-group msg_group_psw hidden continuation">
                     <div class="message-content">
-                        <p class="message-bubble">And this is my second message.</p>
+                        <p class="message-bubble">Welcome to Paos-niversary 2025.</p>
                     </div>
                 </div>
 
                 <!-- (Paok:) -->
-                <div class="message-group hidden continuation">
+                <div class="message-group msg_group_psw hidden continuation">
                     <div class="message-content">
-                        <p class="message-bubble"> message.</p>
+                        <p class="message-bubble">We are the Paos, and we have prepared something for you</p>
                     </div>
                 </div>
 
                 <!-- PAOM:  -->
-                <div class="message-group hidden">
-                    <img class="pfp" src="img/paom.png" alt="User Avatar">
+                <div class="message-group msg_group_psw hidden">
+                    <img class="pfp" src="img/paom.png" alt="pao_avatar">
                     <div class="message-content">
                         <span class="username">Paok</span>
-                        <p class="message-bubble">Hey, this is my first message!</p>
+                        <p class="message-bubble">But firstly...</p>
                     </div>
                 </div>
 
                 <!-- (Paom) -->
-                <div class="message-group hidden continuation">
+                <div class="message-group msg_group_psw hidden continuation">
                     <div class="message-content">
-                        <p class="message-bubble"> message.</p>
+                        <p class="message-bubble">You need to enter the password.</p>
                     </div>
                 </div>
+
+                <!-- (Paom) -->
+                <div class="message-group msg_group_psw hidden continuation">
+                    <div class="message-content">
+                        <p class="message-bubble">The event is designed for 'SPECIAL GUEST' only.</p>
+                    </div>
+                </div>
+
+                <div class="message-group msg_group_psw hidden">
+                    <img class="pfp" src="img/paok.png" alt="pao_avatar">
+                    <div class="message-content">
+                        <span class="username">Paok</span>
+                        <p class="message-bubble">I supposed 1 hint should be enough...</p>
+                    </div>
+                </div> 
             </div>
 
-            <div class="input_password containers message-group hidden">
+            <div class="input_password containers message-group msg_group_psw hidden">
                 <div class="title label">ENTER PASSWORD</div>
                 <form id="form">
                     <input id="psw_input" type="text">
@@ -91,6 +107,64 @@
                 </div>
             </div>
             
+        </div>
+    </div>
+    <!-- LOADING -->
+    <div class="loading_screen_container containers center hidden" id="loader">
+        <img width="300px" src="img/pao_loading.gif" alt="pao_loading_gif">
+    </div>
+    <!-- CLOCK -->
+    <div class="clock_container containers" id="testing">
+        <div class="clock">
+            <div class="pao_talking_container">
+            <!-- PAO TALKING -->
+            <!-- Paok:  -->
+                <div class="message-group msg_group_clock hidden">
+                    <img class="pfp" src="img/paok.png" alt="pao_avatar">
+                    <div class="message-content">
+                        <span class="username">Paok</span>
+                        <p class="message-bubble">Sup again</p>
+                    </div>
+                </div> 
+
+                <!-- (Paok):   -->
+                <div class="message-group msg_group_clock hidden continuation">
+                    <div class="message-content">
+                        <p class="message-bubble">Wanna take a guess at how long we been together?</p>
+                    </div>
+                </div>
+
+            <!-- Paom:  -->
+                <div class="message-group msg_group_clock hidden">
+                    <img class="pfp" src="img/paom.png" alt="pao_avatar">
+                    <div class="message-content">
+                        <span class="username">Paok</span>
+                        <p class="message-bubble">Of course it's 1 year -3-)</p>
+                    </div>
+                </div> 
+
+                <div class="message-group msg_group_clock hidden continuation">
+                    <div class="message-content">
+                        <p class="message-bubble">I'm talking maths here</p>
+                    </div>
+                </div>
+
+                <div class="message-group msg_group_clock hidden continuation">
+                    <div class="message-content">
+                        <p class="message-bubble" id="math_rant">This message should change</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="counting">
+                <p id="counter"></p>
+            </div>
+            <div class="">
+                <span id="byHour"></span>
+                <span id="byMin"></span>
+                <span id="bySec"></span>
+            </div>
         </div>
     </div>
 </div>

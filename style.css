@@ -32,7 +32,7 @@ body{
 }
 
 /*LETTER CSS*/
-.letter_container{
+.center{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,6 +145,7 @@ body{
 
 .message-bubble {
   background-color: var(--discord-blue);
+  color: var();
   padding: 8px 12px;
   margin-block: 2px;
   border-radius: 6px;
@@ -169,10 +170,6 @@ body{
   background-color: var(--discord-blue);
   color: white;
   border-radius: 5px;
-}
-
-.input_password button:hover{
-
 }
 
 .input_password input{
