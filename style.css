@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -7,6 +9,7 @@
 :root{
   --white: #E9E3DF;
   --orange: #FF7A30;
+  --purple: #b86afc;
   --discord-blue: #30394b;
   --discord-grey: #303030;
   --black: #000000;
@@ -14,6 +17,11 @@
 
 body{
   background-color: var(--white);
+  font-family: 'nunito';
+}
+
+.title{
+  font-family: 'Josefin Sans' ;
 }
 
 /* CONTAINERS SPACING */
@@ -113,12 +121,12 @@ body{
 }
 
 .message-group.continuation {
-  margin-left: 50px; /* align with text, no pfp */
+  margin-left: 56px; /* align with text, no pfp */
 }
 
 .pfp {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   margin-right: 12px;
 }
@@ -132,7 +140,7 @@ body{
   font-weight: 600;
   color: var(--discord-blue);
   margin-bottom: 4px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .message-bubble {
@@ -140,7 +148,7 @@ body{
   padding: 8px 12px;
   margin-block: 2px;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15px;
   max-width: 300px;
   word-wrap: break-word;
 }
@@ -148,8 +156,54 @@ body{
 /* PASSWORD INPUT BOX */
 .input_password{
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  border: 2px solid;
+  position: relative;
+  margin-top: 30px;
+}
+
+.input_password button{
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--discord-blue);
+  color: white;
+  border-radius: 5px;
+}
+
+.input_password button:hover{
+
+}
+
+.input_password input{
+  padding: 5px 10px;
+  border: 3px solid var(--discord-blue); 
+  border-radius: 5px;
+  width: 200px;  
+
+}
+
+.input_password form{
+  margin: 2%;
+}
+
+.label{
+  position: absolute;
+  font-size: 13px;
+  top: -10px;
+  left: 70px;
+}
+
+.hint{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+}
+
+.hint button{
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 /*FOR ANIMATION/ FADING EFFECT*/

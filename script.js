@@ -4,6 +4,9 @@ const messages = document.querySelectorAll('.message-group');
 const test_btn = document.getElementById('test_btn');
 const form = document.getElementById('form');
 const psw_input = document.getElementById('psw_input');
+const hint = document.getElementById('hint');
+const hint_reveal_btn = document.getElementById('hint_reveal_btn');
+
 
 //FADE IN AND OUT FUNCTION
 function fadeInEffect(element, delayMs = 0) {
@@ -48,7 +51,7 @@ function fadeInSequence(elements, delay = 1000, autoHide = false, hideDelay = 20
 
 //letter fade in at the start
     fadeInEffect(letter_container);
-    //fadeInSequence(messages, 1200, false, 4000);
+    //fadeInSequence(messages, 10, false, 4000);
 
 //letter accept button
 acp_letter_btn.addEventListener('click', () => {
@@ -68,12 +71,18 @@ form.addEventListener('submit', function(e) {
         messages.forEach((msg, i) => {
             fadeOutAndHide(msg, i * 100);
         });
+    } else if( psw_input.value == '' ){
+      alert('You need to type something in bruh...')
     } else {
         alert('Try again');
         psw_input.value = '';
     }
 });
 
+// Hint button
+hint_reveal_btn.addEventListener('click', () => {
+  hint.classList.remove('hidden');
+});
 
 
 
