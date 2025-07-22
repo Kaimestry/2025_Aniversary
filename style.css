@@ -16,12 +16,19 @@ body{
   background-color: var(--white);
 }
 
+/* CONTAINERS SPACING */
+.containers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*LETTER CSS*/
 .letter_container{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 85vh;
 }
 
 .letter{
@@ -68,6 +75,7 @@ body{
   font-size: 18px;
 }
 
+
 .footer{
   font-size: 10px;
   margin: 10px 30px;
@@ -76,7 +84,6 @@ body{
 .letter-btn{
   margin: 20px 0 40px 0;
 } 
-
 .letter button{
   font-size: 18px;
   padding: 12px 18px;
@@ -90,4 +97,80 @@ body{
   color: #c145ff;
 }
 
+/* PAO MESSAGES */
+.pao_talking_container {
+  display: inline-block;
+    max-width: 100%; /* optional: prevents overflow */
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #dcddde;
+  width: 400px;
+  border-radius: 8px;
+}
 
+.message-group {
+  display: flex;
+}
+
+.message-group.continuation {
+  margin-left: 50px; /* align with text, no pfp */
+}
+
+.pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 600;
+  color: var(--discord-blue);
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.message-bubble {
+  background-color: var(--discord-blue);
+  padding: 8px 12px;
+  margin-block: 2px;
+  border-radius: 6px;
+  font-size: 14px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+/* PASSWORD INPUT BOX */
+.input_password{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+}
+
+/*FOR ANIMATION/ FADING EFFECT*/
+.hidden{
+  display: none;
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in.show{
+  opacity: 1;
+}
+
+.fade-out{
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out.hide{
+  opacity: 0;
+}

@@ -8,34 +8,91 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="big_container">
-        <div class="letter_container">
-            <div class="letter">
-                <div class="title invite-p"><p>YOU'RE INVITED TO</p></div>
-                <img src="img/pao_flowers.png" alt="pao_with_flower">
-                <div class="content">
-                    <div class="title event-p">
-                        <p>PAO'S</p>
-                        <p>SPECIAL EVENT</p>
-                    </div>
-                    <div class="letter-time title">
-                        <hr>
-                        <p>08/20/2025</p>
-                        <hr>
-                    </div>
-                    <div class="footer">
-                        <p>Join the Paos as we celebrate a milestone of love, laughter,
-                            and lasting memories on this special occasion.
-                        </p>
-                    </div>
-                    <div class="letter-btn">
-                        <button class="title" id="acp_letter_btn">ACCEPT THE INVITE</button>
-                    </div>
+<div class="big_container">
+    <!-- LETTERS -->
+    <div class="letter_container containers fade-in hidden" id="letter_container">
+        <div class="letter">
+            <div class="title invite-p"><p>YOU'RE INVITED TO</p></div>
+            <img src="img/pao_flowers.png" alt="pao_with_flower">
+            <div class="content">
+                <div class="title event-p">
+                    <p>PAO'S</p>
+                    <p>SPECIAL EVENT</p>
                 </div>
-
+                <div class="letter-time title">
+                    <hr>
+                    <p>08/10/2025</p>
+                    <hr>
+                </div>
+                <div class="footer">
+                    <p>Join the Paos as we celebrate a milestone of love, laughter,
+                        and lasting memories on this special occasion.
+                    </p>
+                </div>
+                <div class="letter-btn">
+                    <button class="title" id="acp_letter_btn">ACCEPT THE INVITE</button>
+                </div>
             </div>
         </div>
     </div>
+    <div class="password_container containers">
+        <div class="password">
+            <div class="pao_talking_container">
+            <!-- PAO TALKING -->
+            <!-- Paok:  -->
+                <div class="message-group hidden">
+                    <img class="pfp" src="img/paok.png" alt="User Avatar">
+                    <div class="message-content">
+                        <span class="username">Paok</span>
+                        <p class="message-bubble">Hey, this is my first message!</p>
+                    </div>
+                </div> 
+
+                <!-- (Paok):   -->
+                <div class="message-group hidden continuation">
+                    <div class="message-content">
+                        <p class="message-bubble">And this is my second message.</p>
+                    </div>
+                </div>
+
+                <!-- (Paok:) -->
+                <div class="message-group hidden continuation">
+                    <div class="message-content">
+                        <p class="message-bubble"> message.</p>
+                    </div>
+                </div>
+
+                <!-- PAOM:  -->
+                <div class="message-group hidden">
+                    <img class="pfp" src="img/paom.png" alt="User Avatar">
+                    <div class="message-content">
+                        <span class="username">Paok</span>
+                        <p class="message-bubble">Hey, this is my first message!</p>
+                    </div>
+                </div>
+
+                <!-- (Paom) -->
+                <div class="message-group hidden continuation">
+                    <div class="message-content">
+                        <p class="message-bubble"> message.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input_password containers message-group hidden">
+                <div class="titl">ENTER PASSWORD</div>
+                <form id="form">
+                    <input id="psw_input" type="text">
+                    <button type="submit">SUBMIT</button>
+                </form>
+                <div class="hint">
+                    <button>Click for hint</button>
+                    <span>Our 'special day!' (6 numbers)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="script.js"></script>
 </body>
